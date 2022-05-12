@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">ANAS PROJECT FORM</h1>
+            <p id="description" class="description text-center">
+                Thank you for taking the time to fill the form!
+            </p>
+        </header>
+        <form id="survey-form" action="connect.php" method="POST">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="SSN-label" for="SSN">SSN</label>
+                <input type="number" name="SSN" id="SSN" class="form-control" placeholder="Enter your SSN" required />
+            </div>
+            <div class="form-group">
+                <label id="Mobile-label" for="Mobile">Mobile Number</label>
+                <input type="text" name="Mobile" id="Mobile" class="form-control" placeholder="Enter your Mobile Number"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="Job-label" for="Mobile">Job</label>
+                <input type="text" name="Job" id="Job" class="form-control" placeholder="Enter your Job" required />
+            </div>
+            <div class="form-group">
+                <label id="Salary-label" for="Salary">Salary</label>
+                <input type="number" name="Salary" id="Salary" class="form-control" placeholder="Enter your Salary"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="BirthDate-label" for="BirthDate">BirthDate</label>
+                <input type="date" name="BirthDate" id="BirthDate" class="form-control"
+                    placeholder="Enter your BirthDate" required />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
